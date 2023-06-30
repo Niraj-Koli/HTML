@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <hr />
+
+        <header align="center">
+            <font face="cursive" size="15" color="black">Forms</font>
+        </header>
+
+        <hr />
+
+        <fieldset align="center">
+            <legend>
+                <font face="arial" size="6">Legend</font>
+            </legend>
+
+            <!-- <form name="f1" action="mailto:user@email.com"> -->
+            <!-- <form name="f1" action="index.html"> -->
+            <form name="f1">
+                <table width="100%" border="2" cellspacing="2" cellpadding="2">
+                    <tr>
+                        <th colspan="2">
+                            <font size="5">Personal Information</font>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Name</font>
+                        </th>
+                        <td>
+                            <input
+                                type="text"
+                                name="name"
+                                maxlength="30"
+                                size="70"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Email Address</font>
+                        </th>
+                        <td>
+                            <input
+                                type="email"
+                                name="email"
+                                maxlength="40"
+                                size="70"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Password</font>
+                        </th>
+                        <td>
+                            <input
+                                type="password"
+                                name="pass"
+                                size="50"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Gender</font>
+                        </th>
+                        <td>
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="male"
+                                required />
+                            <font size="5">Male</font><br />
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="female"
+                                required />
+                            <font size="5">Female</font><br />
+                            <input
+                                type="radio"
+                                name="gender"
+                                value="other"
+                                required />
+                            <font size="5">Other</font><br />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Hobbies</font>
+                        </th>
+                        <td>
+                            <input
+                                type="checkbox"
+                                name="check"
+                                value="Writing" />
+                            <font size="5">Writing</font><br />
+                            <input
+                                type="checkbox"
+                                name="check"
+                                value="Reading" />
+                            <font size="5">Reading</font><br />
+                            <input
+                                type="checkbox"
+                                name="check"
+                                value="Sports" />
+                            <font size="5">Sports</font><br />
+                            <input
+                                type="checkbox"
+                                name="check"
+                                value="Dancing" />
+                            <font size="5">Dancing</font><br />
+                            <input
+                                type="checkbox"
+                                name="check"
+                                value="Singing" />
+                            <font size="5">Singing</font><br />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Wingman</font>
+                        </th>
+                        <td>
+                            <input list="status" />
+                            <datalist id="status">
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Separated">Separated</option>
+                                <option value="Divorced">Divorced</option>
+                                <option value="Widowed">Widowed</option>
+                            </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Socials</font>
+                        </th>
+                        <td>
+                            <select size="4" name="select" multiple>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Whatsapp">Whatsapp</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Color</font>
+                        </th>
+                        <td>
+                            <input
+                                type="color"
+                                name="color"
+                                value="color"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Date</font>
+                        </th>
+                        <td>
+                            <input
+                                type="date"
+                                name="date"
+                                value="date"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Phone Number / Tel</font>
+                        </th>
+                        <td>
+                            <input
+                                type="tel"
+                                name="tel"
+                                size="70"
+                                pattern="[0-9]{10}"
+                                placeholder=" Example : 98xxxxxx321"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Time</font>
+                        </th>
+                        <td>
+                            <input
+                                type="time"
+                                name="time"
+                                value="time"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Week</font>
+                        </th>
+                        <td>
+                            <input type="week" name="week" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">File</font>
+                        </th>
+                        <td>
+                            <input type="file" name="file" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Month</font>
+                        </th>
+                        <td>
+                            <input type="month" name="month" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Datetime-Local</font>
+                        </th>
+                        <td>
+                            <input
+                                type="datetime-local"
+                                name="datetime-local"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Range</font>
+                        </th>
+                        <td>
+                            <input type="range" name="range" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Search</font>
+                        </th>
+                        <td>
+                            <input type="search" name="search" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">URL</font>
+                        </th>
+                        <td>
+                            <input type="url" name="url" required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Number</font>
+                        </th>
+                        <td>
+                            <input
+                                type="number"
+                                name="number"
+                                min="1"
+                                max="10"
+                                required />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Hidden</font>
+                        </th>
+                        <td>
+                            <input type="hidden" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Image</font>
+                        </th>
+                        <td>
+                            <input
+                                type="image"
+                                name="image"
+                                src="Images/GojoAlpha.jpg"
+                                border="3"
+                                alt="Nosaka"
+                                height="350"
+                                width="600" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>
+                            <font size="5">Textarea</font>
+                        </th>
+                        <td>
+                            <textarea
+                                name="dreams"
+                                rows="15"
+                                cols="70"
+                                required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">
+                            <input
+                                style="
+                                    margin: 10px;
+                                    padding: 10px;
+                                    font-size: 20px;
+                                "
+                                type="submit"
+                                name="submit"
+                                value="Submit" />
+
+                            <input
+                                style="
+                                    margin: 10px;
+                                    padding: 10px;
+                                    font-size: 20px;
+                                "
+                                type="reset"
+                                name="reset"
+                                value="Reset" />
+
+                            <input
+                                style="
+                                    margin: 10px;
+                                    padding: 10px;
+                                    font-size: 20px;
+                                "
+                                type="button"
+                                name="button"
+                                value="Click" />
+                        </th>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+
+        <hr />
+    </body>
+</html>
